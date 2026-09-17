@@ -9,7 +9,14 @@ export const searchBoxStyles: Partial<ISearchBoxStyles> = {
         borderRadius: 50,
         border: 'none',
         backgroundColor: '#ffffff',
-        outline: 'none'
+        outline: 'none',
+        paddingLeft: 10,
+        selectors: {
+            ':after': {
+                outline: 'none',
+                border: 'none',
+            }
+        }
     }
 };
 
@@ -60,7 +67,7 @@ export const normalButtonStyles: Partial<IButtonStyles> = {
 export const cardStyles = (width: number, height: number, hoverable: boolean = true): IDocumentCardStyles => ({
     root: {
         padding: 20,
-        maxWidth:'none',
+        maxWidth: 'none',
         width: width,
         height: height,
         borderRadius: 30,
@@ -72,7 +79,22 @@ export const cardStyles = (width: number, height: number, hoverable: boolean = t
             ':hover': hoverable ? {
                 color: '#ffffff',
                 backgroundImage: 'linear-gradient(150deg, #0F412B, #227C53)',
-            } : { }
+            } : {}
         }
+    }
+})
+
+// card style with full width
+export const cardStylesWithFullWidth = (height: number): IDocumentCardStyles => ({
+    root: {
+        padding: 20,
+        maxWidth: 'none',
+        width: '100%',
+        height: height,
+        borderRadius: 20,
+        border: 'none',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between'
     }
 })

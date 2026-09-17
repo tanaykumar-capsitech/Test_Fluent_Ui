@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import { Dashboard } from "./Pages/Dashboard"
 import { SideNaveBar } from "./Components/SideNavbar"
-import { Task } from "./Pages/Task"
+import { Project } from "./Pages/Project"
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
         <SideNaveBar />
         <Routes>
           <Route path="/" element={<Dashboard />}></Route>
-          <Route path="/task" element={<Task />}></Route>
+          <Route path="/project" element={<Project />}></Route>
         </Routes>
       </div>
     </>

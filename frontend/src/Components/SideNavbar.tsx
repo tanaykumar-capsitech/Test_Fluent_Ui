@@ -37,8 +37,8 @@ export const SideNaveBar = () => {
                     isExpanded: true,
                 },
                 {
-                    name: 'Task',
-                    url: '/task',
+                    name: 'Project',
+                    url: '/project',
                     key: 'key2',
                     isExpanded: true
                 }
